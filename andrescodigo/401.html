@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Horarios SiHo - E.N.P. 4 - U.N.A.M.</title>
+
+<link href="https://enp4.unam.mx/Resources_SiHo/Resources Generales/estilos.css" rel="stylesheet" type="text/css" media="all">
+<link rel="icon" type="image/x-icon" href="https://enp4.unam.mx/Resources_SiHo/Resources Generales/favicon.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"></head>
+
+<body style="background-color:#909fc1!important;">
+<header style="min-height:160px; background:linear-gradient(90deg,#1e2957 0%,#3b5998 100%);">
+<div class="contenedor">
+<div class="encabezado">
+<div class="enc_unam">
+<a href="https://www.unam.mx">
+<img src="https://enp4.unam.mx/Resources_SiHo/Resources Generales/Encabezado/encabezadounam.gif" alt="Portal UNAM" />
+
+</a>
+</div>
+<div class="enc_prepa"></div>
+<div style="z-index:10; position:absolute;right:00px;top:0px;">
+<a href="https://www.unaminternacional.unam.mx/es/unam"><img src="https://enp4.unam.mx/Resources_SiHo/Resources Generales/Encabezado/FirmaOK.jpg" alt="UNAM" style="max-height:103px;"/></a>
+</div>
+</div>
+<div class="titulo">
+<a href="https://enp4.unam.mx"><div class="titulo_prepa"></div></a>
+</div>
+<div class="bar_navega">
+<div class="bar_opc">
+<a href="https://enp4.unam.mx/siho">
+<img src="https://enp4.unam.mx/Resources_SiHo/Resources Generales/Encabezado/house.gif" alt="pagina principal"/>
+<label style="margin-bottom:5px;">Regresar al Inicio</label>
+</a>
+</div>
+<div class="bar_opc"></div>
+<div class="bar_opc"></div>
+</div>
+<br><br>
+ 
+<div>
+<center>
+<br>
+<h3>Secretaría de Asuntos Escolares<br>Ciclo Escolar 2025-2026<br>Acceso al Sistema SiHo</h3>
+<h5>Usuario: Número de Cuenta UNAM (9 dígitos sin el guión) ó RFC del Profesor (Sin Homoclave, es decir, solamente los primeros 10 caracteres del RFC)<br>
+Contraseña: Fecha de Nacimiento (Formato DDMMAAAA) ó Número de Trabajador</h5>
+
+    <form id="FormularioLogin" 
+        style="border:2px dotted; max-width:450px; padding:20px;" 
+        action="/siho/index.php" 
+        method="POST">
+        
+        <table>
+            <tr>
+                <td style="padding:10px 15px;"><label>Usuario:</label></td>
+                <td style="padding:10px 15px;">
+                    <input id="usuario" name="usuario" type="text" 
+                        style="min-width:200px; height:20px; padding:5px;" 
+                        maxlength="10" 
+                        value="">
+                </td>
+            </tr>
+            <tr>
+                <td style="padding:10px 15px;"><label>Password:</label></td>
+                <td style="padding:10px 15px;">
+                    <input id="password" name="password" type="password" 
+                        style="min-width:200px; height:20px; padding:5px;" 
+                        value="">
+                </td>
+            </tr>
+        </table>
+
+        <br />
+        <div>
+            <input name="login" id="login" type="submit" value="Acceder" 
+                style="min-height:40px; min-width:100px;">
+        </div>
+    </form>
+
+    <br />
+
+    <div style="font-size:16px; color:#cc0000;">
+            </div>
+</div>
+<div>
+
+
+<br><center><h3>Consulta de horarios de clase:</h3><div>Selecciona el grupo para generar su horario: <BR><br><TABLE BORDER="1"><FORM ACTION="horarios.php" METHOD="POST"><TR><TD><SELECT style='min-height:30px;min-width:66px;font-size:16px' NAME="grupo[]" SIZE="1"><OPTION VALUE='' style='font-size:16px'></OPTION><OPTION VALUE=401>401</OPTION><OPTION VALUE=402>402</OPTION><OPTION VALUE=403>403</OPTION><OPTION VALUE=404>404</OPTION><OPTION VALUE=405>405</OPTION><OPTION VALUE=406>406</OPTION><OPTION VALUE=407>407</OPTION><OPTION VALUE=408>408</OPTION><OPTION VALUE=409>409</OPTION><OPTION VALUE=410>410</OPTION><OPTION VALUE=411>411</OPTION><OPTION VALUE=412>412</OPTION><OPTION VALUE=413>413</OPTION><OPTION VALUE=414>414</OPTION><OPTION VALUE=415>415</OPTION><OPTION VALUE=416>416</OPTION><OPTION VALUE=417>417</OPTION><OPTION VALUE=420>420</OPTION><OPTION VALUE=450>450</OPTION><OPTION VALUE=451>451</OPTION><OPTION VALUE=452>452</OPTION><OPTION VALUE=453>453</OPTION><OPTION VALUE=454>454</OPTION><OPTION VALUE=455>455</OPTION><OPTION VALUE=456>456</OPTION><OPTION VALUE=457>457</OPTION><OPTION VALUE=458>458</OPTION><OPTION VALUE=459>459</OPTION><OPTION VALUE=460>460</OPTION><OPTION VALUE=461>461</OPTION><OPTION VALUE=462>462</OPTION><OPTION VALUE=463>463</OPTION><OPTION VALUE=464>464</OPTION><OPTION VALUE=501>501</OPTION><OPTION VALUE=502>502</OPTION><OPTION VALUE=503>503</OPTION><OPTION VALUE=504>504</OPTION><OPTION VALUE=505>505</OPTION><OPTION VALUE=506>506</OPTION><OPTION VALUE=507>507</OPTION><OPTION VALUE=508>508</OPTION><OPTION VALUE=509>509</OPTION><OPTION VALUE=510>510</OPTION><OPTION VALUE=511>511</OPTION><OPTION VALUE=512>512</OPTION><OPTION VALUE=513>513</OPTION><OPTION VALUE=514>514</OPTION><OPTION VALUE=515>515</OPTION><OPTION VALUE=516>516</OPTION><OPTION VALUE=517>517</OPTION><OPTION VALUE=551>551</OPTION><OPTION VALUE=552>552</OPTION><OPTION VALUE=553>553</OPTION><OPTION VALUE=554>554</OPTION><OPTION VALUE=555>555</OPTION><OPTION VALUE=556>556</OPTION><OPTION VALUE=557>557</OPTION><OPTION VALUE=558>558</OPTION><OPTION VALUE=559>559</OPTION><OPTION VALUE=560>560</OPTION><OPTION VALUE=561>561</OPTION><OPTION VALUE=562>562</OPTION><OPTION VALUE=563>563</OPTION><OPTION VALUE=564>564</OPTION><OPTION VALUE=601>601</OPTION><OPTION VALUE=602>602</OPTION><OPTION VALUE=603>603</OPTION><OPTION VALUE=604>604</OPTION><OPTION VALUE=605>605</OPTION><OPTION VALUE=606>606</OPTION><OPTION VALUE=607>607</OPTION><OPTION VALUE=608>608</OPTION><OPTION VALUE=609>609</OPTION><OPTION VALUE=610>610</OPTION><OPTION VALUE=611>611</OPTION><OPTION VALUE=612>612</OPTION><OPTION VALUE=613>613</OPTION><OPTION VALUE=614>614</OPTION><OPTION VALUE=615>615</OPTION><OPTION VALUE=651>651</OPTION><OPTION VALUE=652>652</OPTION><OPTION VALUE=653>653</OPTION><OPTION VALUE=654>654</OPTION><OPTION VALUE=655>655</OPTION><OPTION VALUE=656>656</OPTION><OPTION VALUE=657>657</OPTION><OPTION VALUE=658>658</OPTION><OPTION VALUE=659>659</OPTION><OPTION VALUE=660>660</OPTION><OPTION VALUE=661>661</OPTION><OPTION VALUE=662>662</OPTION><OPTION VALUE=663>663</OPTION></SELECT> </td></tr></table> <br><INPUT style='min-height:40px;min-width:100px' TYPE="SUBMIT"  VALUE="Buscar >>>"></FORM></center><br></div><style>
+button{
+min-width:350px;display: inline-flex; align-items: center; justify-content: center; border: revert; background: #e2e2e2; padding: 10px; cursor: pointer;
+
+
+}
+.pie > tbody > tr{
+display: flex !important;
+justify-content: center !important;
+}
+.pie > tbody > td{
+
+display: inline-flex; align-items: center; justify-content: center; border: revert; background: #e2e2e2; padding: 10px; cursor: pointer;
+}
+</style>
+<br>
+
+<center><table class="pie" style="border-spacing: 13px; min-width: 50%;"><tr><td><button onclick="window.location.href=`https://enp4.unam.mx/`" type="button"><img src="/siho/favicon.png" width="50px" height="50px" />  Regresar a la página principal de la ENP4</button></td></tr></table></center><br>
+<center>
+<div class="prepas" style="height:90px !important">
+<table style="border-spacing: 13px; width: 100%;">
+  <tr>
+    <td><div class="prepa_n"><a href="http://enp1.unam.mx" title="Prepa 1" target="_blank">ENP 1 Gabino Barreda</a></div></td>
+    <td><div class="prepa_n"><a href="http://www.prepa2.unam.mx" title="Prepa 2" target="_blank">ENP 2 Erasmo Castellanos Quinto</a></div></td>
+    <td><div class="prepa_n"><a href="http://enp3.unam.mx" title="Prepa 3" target="_blank">ENP 3 Justo Sierra</a></div></td>
+    <td><div class="prepa_n"><a href="http://prepa5.unam.mx" title="Prepa 5" target="_blank">ENP 5 Jos&eacute; Vasconcelos</a></div></td>
+  </tr>
+  <tr>
+    <td><div class="prepa_n"><a href="http://www.prepa6.unam.mx" title="Prepa 6" target="_blank">ENP 6 Antonio Caso</a></div></td>
+    <td><div class="prepa_n"><a href="http://www.prepa7.unam.mx" title="Prepa 7" target="_blank">ENP 7 Ezequiel E. Ch&aacute;vez</a></div></td>
+    <td><div class="prepa_n"><a href="http://prepa8.unam.mx" title="Prepa 8" target="_blank">ENP 8 Miguel E. Schulz</a></div></td>
+    <td><div class="prepa_n"><a href="http://www.prepa9.unam.mx" title="Prepa 9" target="_blank">ENP 9 Pedro de Alba</a></div></td>
+  </tr>
+</table>
+</div>
+<div class="pie_pag"><center>
+      Escuela Nacional Preparatoria, Plantel 4 "Vidal Castañeda y Nájera"
+	  <br />Av. Observatorio No. 170. Col. Tacubaya. Del. Miguel Hidalgo. C.P. 11870 Tel. 55-5277-0848.
+	  <p>Hecho en México, E.N.P. 4 - UNAM, todos los <a href="https://enp4.unam.mx" title="D.R.">derechos reservados</a> 2008 - 2022.
+ Esta p&aacute;gina puede ser reproducida con fines no lucrativos siempre y cuando no se mutile, y se cite la fuente completa as&iacute; como su direcci&oacute;n electr&oacute;nica. 
+De otra forma, requiere permiso previo por escrito de la instituci&oacute;n. </p>
+	  <p><a href="https://www.unam.mx" title="Sitio UNAM">Universidad Nacional Aut&oacute;noma de M&eacute;xico</a> - 
+      <a href="http://www.dgenp.unam.mx" title="Sitio de la D.G.E.N.P.">Escuela Nacional Preparatoria.</a></p>
+</div> 
+
+</div> <!-- contenedor -->
+</center>
+</body>
+</html>
